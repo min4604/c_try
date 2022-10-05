@@ -1,0 +1,23 @@
+{
+  "tests": [
+    {
+      "name": "Compile Test",
+      "setup": "",
+      "run": "make",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 40
+    },
+    {
+      "name": "try 1",
+      "setup": "make a.out",
+      "run": "./a.out 1",
+      "comparison": "included",
+      "timeout": 1200,
+      "points": 60
+    }
+   
+  ]
+}
