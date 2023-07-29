@@ -415,7 +415,7 @@ int c=0;
 int main()
 {
     printf("{");
-    for(int i=0;i<32;i++)
+    for(int i=0;i<400;i++)
     {
         
         printf("{");
