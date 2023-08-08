@@ -378,7 +378,7 @@ int main()
         for(int j=0;j<200;j++)
         {
             uint32_t ss=0;
-            /*
+            
             if(data[i*400+j]<64)
                 ss=2;
             else if(data[i*400+j]<128)
@@ -395,15 +395,8 @@ int main()
                 ss+=1;
             else
                 ss+=0;
-                */
-              if(data[i*400+j]<128)
-                ss=2;
-            else
-                ss=0;
-            if(data[i*400+j+200]<128)
-                ss+=1;
-            else
-                ss+=0;
+                
+            
             printf("0x%x ," ,ss);
             
         }
