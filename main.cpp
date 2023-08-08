@@ -372,13 +372,12 @@ int main()
             else
                 ss+=1;
             
-            ss=(data[i*400+j]<<1)+data[i*400+j+200];
             printf("0x%x ," ,ss);
             
         }
         for(int j=0;j<200;j++)
         {
-            uint32_t ss=(data[i*400+j]<<1)+data[i*400+j+200];
+            uint32_t ss=0;
             if(data[i*400+j]<64)
                 ss=0;
             else if(data[i*400+j]<128)
