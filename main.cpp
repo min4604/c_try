@@ -364,13 +364,13 @@ int main()
         {
             uint32_t ss=0;
             if(data[i*400+j]<128)
-                ss=2;
-            else
                 ss=0;
-            if(data[i*400+j+200]<128)
-                ss+=1;
             else
+                ss=2;
+            if(data[i*400+j+200]<128)
                 ss+=0;
+            else
+                ss+=2;
             
             printf("0x%x ," ,ss);
             
