@@ -356,7 +356,7 @@ uint8_t data[]={0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 int main()
 {
     printf("{");
-    for(int i=0;i<400;i++)
+    for(int i=0;i<342;i++)
     {
         
         printf("{");
