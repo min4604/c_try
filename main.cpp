@@ -380,21 +380,21 @@ int main()
             uint32_t ss=0;
             
             if(data[i*400+j]<64)
-                ss=2;
+                ss=0;
             else if(data[i*400+j]<128)
-                ss=0;
-            else if(data[i*400+j]<192)
                 ss=2;
-            else
+            else if(data[i*400+j]<192)
                 ss=0;
-            if(data[i*400+j+200]<64)
-                ss+=1;
-            else if(data[i*400+j+200]<128)
-                ss+=0;
-            else if(data[i*400+j+200]<192)
-                ss+=1;
             else
+                ss=2;
+            if(data[i*400+j+200]<64)
                 ss+=0;
+            else if(data[i*400+j+200]<128)
+                ss+=1;
+            else if(data[i*400+j+200]<192)
+                ss+=0;
+            else
+                ss+=1;
                 
             
             printf("0x%x ," ,ss);
