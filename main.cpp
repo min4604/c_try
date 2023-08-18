@@ -76,7 +76,7 @@ int main()
 {
     printf("{");
     ct=0;
-    for(int i=0;i<400;i++)
+    for(int i=0;i<320;i++)
     {
         if(i%40==0)
         {
@@ -85,7 +85,7 @@ int main()
         for(int j=0;j<400;j++)
         {
             
-            if(i <2 || i>397)
+            if(i <2 || i>317)
             {
                 printf("1,");
             }
