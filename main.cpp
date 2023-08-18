@@ -424,7 +424,7 @@ int main()
         }
         printf("\n");
     }*/
-    for(int i=0;i<400;i++)
+    for(int i=0;i<320;i++)
     {
         
         printf("{");
