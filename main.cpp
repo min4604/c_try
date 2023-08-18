@@ -95,7 +95,7 @@ int main()
                 }
             }
         }
-        printf("/n");
+        printf("\n");
     }/*
     for(int i=0;i<400;i++)
     {
