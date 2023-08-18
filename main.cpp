@@ -92,7 +92,7 @@ int main()
             else
             {
                 
-                if(j%10==ct && j%10==(ct+1))
+                if(j%10==ct || j%10==(ct+1))
                 {
                     printf("1,");
                 }
