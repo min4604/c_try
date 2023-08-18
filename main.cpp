@@ -96,7 +96,7 @@ int main()
             }
         }
         printf("/n");
-    }
+    }/*
     for(int i=0;i<400;i++)
     {
         
@@ -119,6 +119,6 @@ int main()
         printf("},\n");
     }
     printf("};");
-
+*/
     return 0;
 }
