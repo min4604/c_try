@@ -81,7 +81,7 @@ int main()
         for(int j=0;j<400;j++)
         {
             
-            if(i <2 && i>398)
+            if(i <2 || i>398)
             {
                 printf("1,");
             }
