@@ -75,6 +75,7 @@ int coot=0;
 int main()
 {
     printf("{");
+    ct=0;
     for(int i=0;i<400;i++)
     {
         if(i%40==0)
