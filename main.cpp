@@ -77,20 +77,20 @@ int main()
     printf("{");
     for(int i=0;i<400;i++)
     {
-        int rtr=i%40;
+        if(i%40==0)
+        {
+           ct++;
+        }
         for(int j=0;j<400;j++)
         {
             
-            if(i <2 || i>398)
+            if(i <2 || i>397)
             {
                 printf("1,");
             }
             else
             {
-                if(rtr==0)
-                {
-                    ct++;
-                }
+                
                 if(j%10==ct && j%10==(ct+1))
                 {
                     printf("1,");
