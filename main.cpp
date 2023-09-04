@@ -2019,7 +2019,7 @@ int main()
         for(int j=0;j<200;j++)
         {
            
-            uint8_t MM=(data_M[i*400+j])+(data_M[i*400+j+200]<<1);
+            uint8_t MM=(data_M[i*400+j]<<1)+(data_M[i*400+j+200]);
            uint8_t CC=((data_C[i*400+200-j])+(data_C[i*400+400-j]<<1))<<2;
            uint8_t YY=((data_Y[i*400+200-j])+(data_Y[i*400+400-j]<<1))<<6;
             uint8_t ss=MM |CC|YY;
