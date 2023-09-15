@@ -2950,7 +2950,7 @@ int main()
         printf("\n");
     }*/
     //0M 2C 4K 6Y
-     for(int i=0;i<630;i++)
+     for(int i=0;i<710;i++)
     {
         
         printf("{");
