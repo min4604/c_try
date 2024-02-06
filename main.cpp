@@ -2510,6 +2510,8 @@ int main()
         printf("\n");
     }*/
     //0M 2C 4K 6Y
+    //d200 d400 a201 a001  ABCD
+    //c200 c400 b201 b001  YCMK
      for(int i=0;i<600;i++)
     {
         
@@ -2517,28 +2519,31 @@ int main()
         for(int j=0;j<200;j++)
         {
             
-           uint8_t MM=(data_M[i*400+j]<<1)+(data_M[i*400+j+200]);
-           uint8_t CC=((data_C[i*400+200-j])+(data_C[i*400+400-j]<<1))<<2;
-           uint8_t KK=((data_K[i*400+j]<<1)+(data_K[i*400+j+200]))<<4;
-           uint8_t YY=((data_Y[i*400+200-j])+(data_Y[i*400+400-j]<<1))<<6;
-            uint8_t ss=MM |CC|YY;
+           uint8_t MM=(data_M[i*400+j+200]<<1)+(data_M[i*400+j]);
+           uint8_t CC=((data_C[i*400+200-j]<<1)+(data_C[i*400+400-j]));
+           uint8_t KK=((data_K[i*400+j])+(data_K[i*400+j+200]<<1));
+           uint8_t YY=((data_Y[i*400+200-j]<<1)+(data_Y[i*400+400-j]));
+            uint8_t ss=KK<<2+YY;
             printf("0x%x ," ,ss);
+            uint8_t ss2=MM<<2+CC;
+            printf("0x%x ," ,ss2);
             
         }
         for(int j=0;j<200;j++)
         {
            
-          uint8_t MM=(data_M[i*400+j]<<1)+(data_M[i*400+j+200]);
-           uint8_t CC=((data_C[i*400+200-j])+(data_C[i*400+400-j]<<1))<<2;
-           uint8_t KK=((data_K[i*400+j]<<1)+(data_K[i*400+j+200]))<<4;
-           uint8_t YY=((data_Y[i*400+200-j])+(data_Y[i*400+400-j]<<1))<<6;
-            uint8_t ss=MM |CC|YY;
+           uint8_t MM=(data_M[i*400+j+200]<<1)+(data_M[i*400+j]);
+           uint8_t CC=((data_C[i*400+200-j]<<1)+(data_C[i*400+400-j]));
+           uint8_t KK=((data_K[i*400+j])+(data_K[i*400+j+200]<<1));
+           uint8_t YY=((data_Y[i*400+200-j]<<1)+(data_Y[i*400+400-j]));
+            uint8_t ss=KK<<2+YY;
             printf("0x%x ," ,ss);
-            //printf("0x%x ," ,ss);
+            uint8_t ss2=MM<<2+CC;
+            printf("0x%x ," ,ss2);
             
         }
-        printf("0x00,0x00,0xA0,0x00,0x00,0x0A,0xAA,0x00");
-        printf("},\n");
+        printf("0x0,0x0,0x0,0x0,0x5,0x0,0x0,0x0,0x0,0x0,0x0,0x5,0x5,0x5,0x0,0x0,");
+        printf("\n");
     }
     //printf("};");
     /*
