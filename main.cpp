@@ -2515,7 +2515,6 @@ int main()
      for(int i=0;i<600;i++)
     {
         
-        printf("{");
         for(int j=0;j<200;j++)
         {
             
