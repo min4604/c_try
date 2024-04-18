@@ -3042,9 +3042,9 @@ int main()
            uint8_t CC=((data_C[i*400+200-j]<<1)+(data_C[i*400+400-j]));
            uint8_t KK=((data_K[i*400+j])+(data_K[i*400+j+200]<<1));
            uint8_t YY=((data_Y[i*400+200-j]<<1)+(data_Y[i*400+400-j]));
-            uint8_t ss=KK<<2+YY;
+            uint8_t ss=(KK<<2)+YY;
             printf("0x%x ," ,ss);
-            uint8_t ss2=MM<<2+CC;
+            uint8_t ss2=(MM<<2)+CC;
             printf("0x%x ," ,ss2);
             
         }
@@ -3055,9 +3055,9 @@ int main()
            uint8_t CC=((data_C[i*400+200-j]<<1)+(data_C[i*400+400-j]));
            uint8_t KK=((data_K[i*400+j])+(data_K[i*400+j+200]<<1));
            uint8_t YY=((data_Y[i*400+200-j]<<1)+(data_Y[i*400+400-j]));
-            uint8_t ss=KK<<2+YY;
+            uint8_t ss=(KK<<2)+YY;
             printf("0x%x ," ,ss);
-            uint8_t ss2=MM<<2+CC;
+            uint8_t ss2=(MM<<2)+CC;
             printf("0x%x ," ,ss2);
              
         }
